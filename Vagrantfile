@@ -13,10 +13,13 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
-  config.vm.provision :shell, path: "install-rvm.sh", privileged: false
-  config.vm.provision :shell, path: "install-ruby.sh", args: "2.2.3 rails", privileged: false
 
   config.vm.provision :shell, path: "bootstrap.sh"
+
+  config.vm.provision :shell, path: "install-rvm.sh", privileged: false
+  config.vm.provision :shell, path: "install-ruby.sh", args: "2.2.3 rails bundler ", privileged: false
+
+  
 
 
   # Disable automatic box update checking. If you disable this, then
