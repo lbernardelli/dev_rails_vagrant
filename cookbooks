@@ -1,0 +1,11 @@
+site "http://community.opscode.com/api/v1"
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'mysql', '6.1.2'
+cookbook 'postgres', '2.16.0'
+cookbook 'nodejs'
+cookbook 'rvm'
+cookbook 'vim'
+cookbook 'redis', '3.0.4'
+cookbook 'rabbitmq', '4.4.0'
